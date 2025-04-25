@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #F8F8F8;
+    color: #333;
+    line-height: 1.6;
+}
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #002240;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.logo span {
+    color: #002240;
+    font-weight: normal;
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #002240;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #031d2e;
+    color: #fff;
+    display: none;
+    z-index: 999;
+    flex-direction: column;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.menu-overlay.active {
+    display: flex;
+}
+
+.menu-overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.menu-columns div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.menu-columns h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.menu-columns a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.menu-columns a:hover {
+    color: #0d9ddb;
+}
+
+.menu-toggle {
+    font-size: 28px;
+    color: #002240;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+}
+
+.overlay-logo {
+    align-self: flex-start;
+}
+
+.overlay-logo img {
+    height: 40px;
+}
+
+.menu-arrow {
+    color: #0d9ddb;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.menu-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-icon {
+    color: #0d9ddb;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hero Section & Slider */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+.slide {
+    min-width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.slide-content {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    background-color: #1A4394;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+}
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 5px;
+}
+.slider-nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.slider-nav-dot.active {
+    background-color: #fff;
+}
+.slider-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Intro Section */
+.intro {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+/* Category Sections */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.category {
+    flex: 1;
+    min-width: 300px;
+    background-color: #002240;
+    color: white;
+    padding: 30px;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #1A4394;  /* Change background color on hover */
+    transform: translateY(-10px);  /* Lift the element up a bit on hover */
+}
+
+.category h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.category-icon {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #4A90E2;
+    transition: transform 0.3s ease;
+}
+
+.category:hover .category-icon {
+    transform: rotate(360deg);  /* Rotate icon on hover */
+}
+
+/* Fund Navigation */
+.fund-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+.fund-btn {
+    background-color: #1A4394;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+.fund-btn:hover {
+    background-color: #0D2F70;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .menu-overlay {
+        padding: 20px;
+    }
+    
+    .slider-container {
+        height: 300px;
+    }
+    .categories {
+        flex-direction: column;
+    }
+    .category {
+        margin-bottom: 20px;
+    }
+    .fund-nav {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: 200px;
+    }
+    .slide-content {
+        font-size: 16px;
+        padding: 10px 20px;
+        bottom: 60px;
+    }
+    .category {
+        padding: 20px;
+    }
+    .fund-btn {
+        width: calc(50% - 10px);
+        text-align: center;
+    }
+}
+
+
+
+
+

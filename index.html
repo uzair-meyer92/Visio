@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visio Investment Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="https://visiofund.co.za/wp-content/themes/visio/images/logo-black.svg" alt="Logo" />
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">
+            &#9776;
+        </div>        
+    </header>
+    
+    <div class="menu-overlay" id="menuOverlay">
+        <span class="close-btn" onclick="toggleMenu()">×</span>
+
+        <div class="overlay-logo">
+            <img src="https://visiofund.co.za/wp-content/themes/visio/images/logo-white.svg" alt="Logo">
+        </div>
+
+        <div class="menu-columns">
+            <div>
+                <h3>WHO WE ARE</h3>
+                <a href="#"><span class="menu-arrow">></span> VISIO IN BRIEF</a>
+                <a href="#"><span class="menu-arrow">></span> VISIO TEAM</a>
+                <a href="#"><span class="menu-arrow">></span> OUR MISSION & VALUES</a>
+                <a href="#"><span class="menu-arrow">></span> INVESTMENT PHILOSOPHY</a>
+                <a href="#"><span class="menu-arrow">></span> INVESTMENT PROCESS</a>
+                <a href="#"><span class="menu-arrow">></span> THE VISIO DIFFERENCE</a>
+                <a href="#"><span class="menu-arrow">></span> RISK MANAGEMENT</a>
+                <a href="#"><span class="menu-arrow">></span> SOCIAL INVESTMENTS</a>
+                <a href="#"><span class="menu-arrow">></span> VISIO ART COLLECTION</a>
+            </div>
+            <div>
+                <h3>OUR FUNDS</h3>
+                <a href="#"><span class="menu-arrow">></span> HEDGE FUNDS</a>
+                <a href="#"><span class="menu-arrow">></span> UNIT TRUSTS</a>
+                <a href="#"><span class="menu-arrow">></span> SEGREGATED MANDATES</a>
+                <a href="#"><span class="menu-arrow">></span> FIXED INCOME FUNDS</a>
+                <a href="#"><span class="menu-arrow">></span> BALANCED FUNDS</a>
+                <a href="#"><span class="menu-arrow">></span> PROPERTY FUNDS</a>
+                <a href="#"><span class="menu-arrow">></span> SHARI'AH FUNDS</a>
+            </div>
+            <div>
+                <h3>GOVERNANCE</h3>
+                <a href="#"><span class="menu-arrow">></span> RESPONSIBLE INVESTING</a>
+                <a href="#"><span class="menu-arrow">></span> FIRM'S POLICIES</a>
+                <a href="#"><span class="menu-arrow">></span> PROXY VOTING REGISTER</a>
+            </div>
+            <div>
+                <h3>CONTACT US</h3>
+            </div>
+        </div>
+        
+        <div class="menu-footer">
+            <img src="https://visiofund.co.za/wp-content/themes/visio/images/menue-img.svg">
+        </div>
+    </div>
+    
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" style="background-image: url(Images/image.png);">
+                <div class="slide-content">LOOK BEYOND THE ORDINARY</div>
+            </div>
+            <div class="slide" style="background-image: url(Images/image2.png);">
+                <div class="slide-content">INVEST WITH CONFIDENCE</div>
+            </div>
+            <div class="slide" style="background-image: url(Images/Image3.png);">
+                <div class="slide-content">STRATEGIC PORTFOLIO MANAGEMENT</div>
+            </div>
+        </div>
+        <div class="slider-arrows">
+            <div class="arrow prev">&#10094;</div>
+            <div class="arrow next">&#10095;</div>
+        </div>
+        <div class="slider-nav"></div>
+    </div>
+    <section class="intro">
+        <p>Visio is an investment management firm initially founded by Patrice Moyal in 2003. The nimble, highly focused and dynamic team manage assets across listed strategies for a diversified client base that includes some of the world's largest and most sophisticated investors.</p>
+    </section>
+    <div class="categories">
+        <div class="category">
+            <div class="category-icon">&#10095;</div>
+            <h2>THE VISIO DIFFERENCE</h2>
+        </div>
+        <div class="category">
+            <div class="category-icon">&#10095;</div>
+            <h2>MEET THE VISIO TEAM</h2>
+        </div>
+        <div class="category">
+            <div class="category-icon">&#10095;</div>
+            <h2>OUR FUNDS AND INVESTMENTS</h2>
+        </div>
+    </div>
+    <div class="fund-nav">
+        <button class="fund-btn">HEDGE FUNDS</button>
+        <button class="fund-btn">UNIT TRUSTS</button>
+        <button class="fund-btn">SEGREGATED MANDATES</button>
+        <button class="fund-btn">AFRICA FUNDS</button>
+        <button class="fund-btn">FUND PERFORMANCE</button>
+        <button class="fund-btn">RISK MANAGEMENT</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
